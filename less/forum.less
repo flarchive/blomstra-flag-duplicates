@@ -1,0 +1,54 @@
+.FlagPostModal {
+  .Search-input {
+    position: relative;
+    margin-top: 4px;
+
+    input {
+      width: 100%;
+    }
+
+    .Search-clear {
+      position: absolute;
+      right: 0;
+      top: 8px;
+      padding: 0 8px 0 0;
+      height: unset;
+    }
+
+    .LoadingIndicator {
+      position: absolute;
+      right: 12px;
+      top: 9px;
+
+      &-container {
+        position: absolute;
+      }
+    }
+  }
+
+  .Search-results {
+    left: 0;
+    position: relative;
+  }
+
+  .FlagPostModal-SelectedDuplicate {
+    .Button {
+      height: unset;
+      padding: 8px 0;
+      width: 36px;
+      font-size: inherit;
+      margin-right: 8px;
+      vertical-align: middle;
+
+      + span {
+        vertical-align: middle;
+      }
+    }
+  }
+
+  // Hide apropriate sections when a result is/isn't selected
+  &-DuplicateSearch {
+    &[data-result-selected] .Search {display: none;}
+    &:not([data-result-selected]) .FlagPostModal-SelectedDuplicate {display: none;}
+  }
+}
