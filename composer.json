@@ -1,0 +1,43 @@
+{
+    "name": "blomstra/flag-duplicates",
+    "description": "Allow users to flag duplicate discussions",
+    "keywords": [
+        "flarum", "flag", "duplicate"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.2.0",
+        "flarum/flags": "^1.2.0",
+        "fof/merge-discussions": "^1.1.4"
+    },
+    "homepage": "https://blomstra.net",
+    "support": {
+        "issues": "https://github.com/blomstra/flarum-ext-flag-duplicate/issues",
+        "source": "https://github.com/blomstra/flarum-ext-flag-duplicate",
+        "forum": "https://discuss.flarum.org/d/29825"
+    },
+    "authors": [
+        {
+            "name": "IanM",
+            "email": "ian@blomstra.net",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Blomstra\\FlagDuplicates\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Flag Duplicates",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-flag",
+                "backgroundColor": "#EBF1FD",
+                "color": "#3a98d0"
+            }
+        }
+    }
+}
